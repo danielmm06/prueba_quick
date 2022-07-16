@@ -53,9 +53,11 @@
   - http://localhost:8000/login/ 
 
   - Se ingresa el usuario creado anteriormente, en base de datos se encuentra un usuario de prueba con:
+    ```
     username = daniel
     password = daniel_123
-    Este en endpoint cuenta con un template HTML que se puede visualizar desde el navegador. 
+    ``` 
+  Este endpoint cuenta con un template HTML que se puede visualizar desde el navegador. 
 
 - Para tener acceso al token de aseguramiento de los endpoints
   - http://localhost:8000/api_generate_token/
