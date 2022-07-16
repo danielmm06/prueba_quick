@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "2b062eed-d130-48ab-b692-391fc76925bb",
+		"name": "test quick",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"daniel\",\n    \"password\": \"daniel_123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api_generate_token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api_generate_token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clients",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/client",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"document\": \"66666\",\n    \"first_name\": \"prueba1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/client/ud/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"ud",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_client",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/client/ud/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"ud",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_product",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"producto prueba 1\",\n    \"description\": \"es un producto de prueba 1\",\n    \"price\": 3500.0,\n    \"stock\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/products/ud/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"products",
+						"ud",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bills",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/bills",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bills"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_bill",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"company_name\": \"company prueba 1\",\n    \"nit\": 80021546586,\n    \"code\": \"123455\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/bills/ud/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bills",
+						"ud",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bills_products",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/bills/products",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"bills",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"prueba_postman\",\n    \"first_name\": \"Prueba\",\n    \"last_name\": \"Postman\",\n    \"email\": \"prueba_postman@prueba.com\",\n    \"password\": \"prueba123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/create_user/1.0/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create_user",
+						"1.0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/excel/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"excel",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload_excel",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "daniel_123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "daniel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/home/daniel/Escritorio/archivoPruebaCargue.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/excel/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"excel",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

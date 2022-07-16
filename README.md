@@ -25,7 +25,7 @@
 
 - Endpoints CRUD 
   - http://localhost:8000/client/ (Listado y creación de clientes)
-  - http://localhost:8000/clientud/<pk> (Actualizar y eliminar un cliente a través del id)
+  - http://localhost:8000/client/ud/<pk> (Actualizar y eliminar un cliente a través del id)
 
   - http://localhost:8000/products/ (Listado y creación de productos)
   - http://localhost:8000/products/ud/<pk> (Actualizar y eliminar un producto a través del id)
@@ -43,9 +43,10 @@
   ```
   {
       "username": " ",
-      "firstname" " ",
-      "lastname": " ",
-      "correo": " "
+      "first_name" " ",
+      "last_name": " ",
+      "email": " ",
+      "password": " "
   }
   ```
 
@@ -77,7 +78,9 @@
 
 A través de postman se puede realizar una prueba sencilla, se realiza un POST a la url http://localhost:8000/excel/ en el body se establece que se enviará en form-data y en el valor key se define como un archivo (file) lo que permitirá cargar un archivo a través de un input file. Al hacer el POST se guardará una copia del documento en la carpeta static/excel y se cargarán los registros en la tabla Clientes. 
 
-**NOTA**: en el proyecto hay un archivo llamado archivoPruebaCargue.csv con algunos datos de prueba para ser cargados. 
+**NOTA**: en el proyecto hay dos archivos:
+        - archivoPruebaCargue.csv con algunos datos de prueba para ser cargados.
+        - test quick.postman_collection.json donde exporte la coleccion de pruebas realizadas en postman
 
 
 ***Desarrollado por Luis Daniel Malaver Mendoza***
